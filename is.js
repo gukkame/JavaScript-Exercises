@@ -53,7 +53,7 @@ is.fun = function (num) {
     return false
 };
 is.truthy = function (num) {
-    if (num == is.fun) {
+    if (is.fun(num) && is.num(num) && is.nan(num)) {
         return true
     }
     return false
