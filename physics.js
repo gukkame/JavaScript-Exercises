@@ -1,6 +1,6 @@
 function getAcceleration(obj) {
 
-    a = obj.f / obj.m
+    let a = obj.f / obj.m
 
     if (isNaN(a)) {
 
