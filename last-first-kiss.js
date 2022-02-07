@@ -1,7 +1,7 @@
 function first(p1) {
-    p = [].concat(p1)
-    l = p.length;
-    i = p[0]
+    let p = [].concat(p1)
+    let l = p.length;
+    let i = p[0]
     if (l == 1) {
         i = p[0][0]
     }
@@ -9,8 +9,8 @@ function first(p1) {
     return i
 }
 function last(p1) {
-    p = [].concat(p1)
-    i = p.length;
+    let p = [].concat(p1)
+    let i = p.length;
     if (i == 1) {
         i = p[0].length
         i = p[0][0 + i - 1]
