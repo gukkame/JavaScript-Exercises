@@ -2,7 +2,7 @@ function dogYears(name, s) {
     let earthAge = s / 31557000
     switch (name) {
         case "earth":
-            return earthAge * 7
+            return roundDown(earthAge * 7, 2)
         case "mercury":
             return roundDown((earthAge / 0.2408500 * 7), 2)
         case "venus":
@@ -24,4 +24,4 @@ function roundDown(number, decimals) {
     decimals = decimals || 0;
     return (Math.floor(number * Math.pow(10, decimals)) / Math.pow(10, decimals));
 }
-// console.log(dogYears('neptune', 1821023456))
+console.log(dogYears('earth', 1000000000))
