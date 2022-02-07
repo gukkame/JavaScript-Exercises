@@ -17,13 +17,13 @@ is.str = function (num) {
     return false
 };
 is.bool = function (num) {
-    if (typeof num === true) {
+    if (typeof num == "boolean") {
         return true
     }
     return false
 };
 is.undef = function (num) {
-    if (typeof num === undefined) {
+    if (typeof num === 'undefined') {
         return true
     }
     return false
