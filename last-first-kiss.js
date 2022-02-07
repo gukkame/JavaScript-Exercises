@@ -18,7 +18,7 @@ function last(p1) {
         ret = ret.substr(0, ret.indexOf('('));
         return ret;
     }
-    console.log("i", p)
+    // console.log("i", p)
     if (i == 1) {
         i = p[0].length
         i = p[0][0 + i - 1]
