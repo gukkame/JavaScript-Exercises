@@ -78,5 +78,11 @@ function superTypeOf(str) {
     if (typeof str === "number") {
         return 'Number'
     }
+    if (typeof str === "number") {
+        return 'Number'
+    }
+    if (typeof num === 'function') {
+        return 'Function'
+    }
     return typeof str
 }
