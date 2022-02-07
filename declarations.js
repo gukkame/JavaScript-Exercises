@@ -3,15 +3,15 @@ const arr = [4, '2']
 
 const obj = {
     str: 'String',
-    num: ' Number',
-    bool: 'Boolean',
+    num: 0,
+    bool: true,
     undef: undefined
 }
 const nested = {
     arr: arr,
     obj: { obj }
 }
-console.log(typeof obj.str)
+console.log(typeof obj.bool)
 
 Object.freeze(nested);
 Object.freeze(arr);
