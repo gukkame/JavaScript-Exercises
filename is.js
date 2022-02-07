@@ -41,17 +41,17 @@ is.arr = function (num) {
     return false
 };
 is.obj = function (num) {
-    if (typeof num === 'object' && !Array.isArray(num) || num === null && !Array.isArray(num)) {
+    if (typeof num === 'object' && !Array.isArray(num) || num !== null) {
         return true
     }
     return false
 };
-is.fun = function (num) {
-    if (typeof num === 'function') {
-        return true
-    }
-    return false
-};
+// is.fun = function (num) {
+//     if (typeof num === 'function') {
+//         return true
+//     }
+//     return false
+// };
 // is.truthy = function (num) {
 //     if (typeof num === "numing") {
 //         return true
