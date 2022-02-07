@@ -62,7 +62,8 @@ is.truthy = function (num) {
 is.falsy = function (num) {
     if (is.num(num) || is.nan(num) || is.str(num) || is.undef(num) || is.obj(num)) {
         return false
+    } else {
+        return true
     }
-    return true
 };
 
