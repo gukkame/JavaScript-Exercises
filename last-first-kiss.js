@@ -1,19 +1,13 @@
 function first(p1) {
-    let p = [].concat(p1)
-    let l = p.length;
-    let i = p[0]
-    if (l == 1) {
-        i = p[0][0]
-    }
-    return i
+    return p1[p1.length - p1.length]
 }
 function last(p1) {
     return p1[p1.length - 1];
 }
 function kiss(p) {
     const arr = [];
-    arr.push(first(p), last(p))
-    return arr
+    return arr.push(first(p), last(p))
+
 }
 // console.log(kiss("gdadadadb"))
-// console.log(last('salut'))
+// console.log(first('salut'))
