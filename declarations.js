@@ -1,5 +1,5 @@
 const escapeStr = "`\\/\"'"
-const arr = [4, undefined, '2']
+const arr = [4, undefined, "'2'"]
 
 const obj = {
     str: 'String',
