@@ -5,7 +5,7 @@ is.num = function (num) {
     return false
 };
 is.nan = function (num) {
-    if (num == isNaN) {
+    if (typeof num === "NaN") {
         return true
     }
     return false
