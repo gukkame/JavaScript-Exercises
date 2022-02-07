@@ -60,15 +60,7 @@ is.truthy = function (num) {
 };
 
 is.falsy = function (num) {
-    if (!is.num(num) || !is.nan(num)) {
-        return true
-    } else if (!is.str(num) || !is.bool(num)) {
-        return true
-    } else if (!is.undef(num) || !is.def(num)) {
-        return true
-    } else if (!is.arr(num) || !is.obj(num) || !is.fun(num)) {
-        return true
-    }
-    return false
+
+    return !num
 };
 
