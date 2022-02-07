@@ -53,14 +53,10 @@ is.fun = function (num) {
     return false
 };
 is.truthy = function (num) {
-    if (is.num(num) && is.nan(num) && is.str(num) && is.bool(num) && is.undef(num) && is.def(num) && is.arr(num) && is.obj(num) && is.fun(num)) {
-        return true
-    }
-    return false
+    return num
 };
 
 is.falsy = function (num) {
-
     return !num
 };
 
