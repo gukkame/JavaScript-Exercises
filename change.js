@@ -1,9 +1,3 @@
-const sourceObject = {
-    num: 42,
-    bool: true,
-    str: 'some text',
-    log: console.log,
-}
 let value2
 function get(key) {
     switch (key) {
