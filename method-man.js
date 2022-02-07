@@ -11,7 +11,7 @@ function whisper(str) {
     return "*" + str.toLowerCase() + "*"
 }
 function capitalize(str) {
-    str1 = ""
+    let str1 = ""
     for (let i = 0; i < str.length; i++) {
         if (i == 0) {
             str1 = str1 + str[0 + i].toUpperCase()
@@ -21,3 +21,4 @@ function capitalize(str) {
     }
     return str1
 }
+// console.log(capitalize('str'))
