@@ -60,9 +60,9 @@ is.truthy = function (num) {
 };
 
 is.falsy = function (num) {
-    if(is.num(num) && is.nan(num) && is.str(num) && is.bool(num) && is.undef() && is.def(num) && is.arr(num) && is.obj(num) && is.fun(num)){
-        return true
+    if (is.num(num) && is.nan(num) && is.str(num) && is.bool(num) && is.undef() && is.def(num) && is.arr(num) && is.obj(num) && is.fun(num)) {
+        return false
     }
-    return false
+    return true
 };
 
