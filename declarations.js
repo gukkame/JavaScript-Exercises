@@ -1,5 +1,6 @@
 const escapeStr = "`\\/\"'"
 const arr = [4, '2']
+
 const obj = {
     str: String,
     num: Number,
@@ -8,8 +9,10 @@ const obj = {
 }
 const nested = {
     arr: arr,
-    obj: obj
+    obj: { obj }
 }
+console.log(obj.str)
+
 Object.freeze(nested);
 Object.freeze(arr);
 Object.freeze(obj);
