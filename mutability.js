@@ -8,6 +8,6 @@ let clone2 = {
 };
 person.age++
 person.country = 'FR'
-samePerson = {
+let samePerson = {
     ...person
 };
