@@ -1,6 +1,7 @@
 // is.num()
-function superTypeOf(is) {
-    if (is.num === "number") {
+function superTypeOf(num) {
+    let num
+    if (num === "number") {
         return true
     }
 }
