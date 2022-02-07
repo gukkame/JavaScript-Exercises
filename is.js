@@ -4,8 +4,8 @@ is.num = function (num) {
     }
     return false
 };
-is.nan = function (num) {
-    if (typeof num === "NaN") {
+is.nan = function (x) {
+    if (x !== x) {
         return true
     }
     return false
