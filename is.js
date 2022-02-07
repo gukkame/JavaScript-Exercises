@@ -1,5 +1,5 @@
 is.num = function (num) {
-    if (typeof num === "number") {
+    if (typeof num == "number") {
         return true
     }
     return false
@@ -29,39 +29,39 @@ is.undef = function (num) {
     return false
 };
 is.def = function (num) {
-    if (typeof num === undefined) {
+    if (typeof num !== 'undefined') {
         return true
     }
     return false
 };
-is.num = function (num) {
-    if (typeof num === "numing") {
+is.arr = function (num) {
+    if (Array.isArray(num)) {
         return true
     }
     return false
 };
-is.num = function (num) {
-    if (typeof num === "numing") {
+is.obj = function (num) {
+    if (typeof str === 'object') {
         return true
     }
     return false
 };
-is.num = function (num) {
-    if (typeof num === "numing") {
+is.fun = function (num) {
+    if (typeof num === 'function') {
         return true
     }
     return false
 };
-is.num = function (num) {
-    if (typeof num === "numing") {
-        return true
-    }
-    return false
-};
-is.num = function (num) {
-    if (typeof num === "numing") {
-        return true
-    }
-    return false
-};
+// is.truthy = function (num) {
+//     if (typeof num === "numing") {
+//         return true
+//     }
+//     return false
+// };
+// is.falsy = function (num) {
+//     if (typeof num === "numing") {
+//         return true
+//     }
+//     return false
+// };
 

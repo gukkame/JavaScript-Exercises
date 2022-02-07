@@ -12,4 +12,4 @@ function kiss(p) {
 
 }
 // console.log(kiss("gdadadadb"))
-// console.log(kiss([1, 2, 3, 4, 5, 6]))
+console.log(kiss([1, 2, 3, 4, 5, 6]))
