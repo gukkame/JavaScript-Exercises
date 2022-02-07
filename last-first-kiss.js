@@ -6,8 +6,10 @@ function last(p1) {
 }
 function kiss(p) {
     const arr = [];
-    return arr.push(first(p), last(p))
+    arr.push(last(p))
+    arr.push(first(p))
+    return arr
 
 }
 // console.log(kiss("gdadadadb"))
-// console.log(first('salut'))
+// console.log(kiss([1, 2, 3, 4, 5, 6]))
