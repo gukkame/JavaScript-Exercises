@@ -41,7 +41,7 @@ is.arr = function (num) {
     return false
 };
 is.obj = function (num) {
-    if (typeof num === 'object' && !Array.isArray(num) || !Object.values(obj).some(element => element !== null)) {
+    if (typeof num === 'object' && !Array.isArray(num) || num === null) {
         return true
     }
     return false
