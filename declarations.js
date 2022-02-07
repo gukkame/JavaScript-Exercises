@@ -9,9 +9,9 @@ const obj = {
 }
 const nested = {
     arr: arr,
-    obj: { obj }
+    obj: { ...obj }
 }
-console.log(typeof obj.bool)
+console.log(typeof nested.obj.str)
 
 Object.freeze(nested);
 Object.freeze(arr);
