@@ -58,10 +58,11 @@ is.truthy = function (num) {
     }
     return false
 };
-// is.falsy = function (num) {
-//     if (typeof num === "numing") {
-//         return true
-//     }
-//     return false
-// };
+
+is.falsy = function (num) {
+    if (!is.fun(num) && !is.num(num) && !is.nan(num)) {
+        return true
+    }
+    return false
+};
 
