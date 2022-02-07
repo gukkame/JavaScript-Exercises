@@ -1,4 +1,4 @@
-typeof str == "string"
-typeof num == "number"
-typeof bool == "boolean"
-typeof undef == "undefined" 
+const undef
+const bool = true
+const str = ""
+const num = 0
