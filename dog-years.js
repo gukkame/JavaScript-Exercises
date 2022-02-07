@@ -1,5 +1,5 @@
 function dogYears(name, s) {
-    earthAge = s / 31557000
+    let earthAge = s / 31557000
     switch (name) {
         case "earth":
             return earthAge * 7
