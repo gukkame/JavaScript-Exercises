@@ -3,7 +3,7 @@ function id(p1) {
 }
 function getLength(p1) {
     let p = [].concat(p1)
-    i = p.length;
+    let i = p.length;
     if (i == 1) {
         i = p[0].length
     }
