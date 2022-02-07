@@ -11,6 +11,14 @@ function first(p1) {
 function last(p1) {
     let p = [].concat(p1)
     let i = p.length;
+    if (typeof p[0] == "function") {
+
+        var ret = p[0].toString();
+        ret = ret.substr('function '.length);
+        ret = ret.substr(0, ret.indexOf('('));
+        return ret;
+    }
+    console.log("i", p)
     if (i == 1) {
         i = p[0].length
         i = p[0][0 + i - 1]
@@ -26,4 +34,4 @@ function kiss(p) {
     return arr
 }
 // console.log(kiss("gdadadadb"))
-// console.log(kiss([7, 2, 3, 4, 99]))
+// console.log(last([]))
