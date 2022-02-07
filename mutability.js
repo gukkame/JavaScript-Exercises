@@ -13,7 +13,7 @@ let clone2 = {
 person.age++
 person.country = 'FR'
 
-samePerson = person
+let samePerson = person
 
 console.log(typeof person)
 console.log(typeof samePerson)
