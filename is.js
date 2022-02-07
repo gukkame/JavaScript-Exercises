@@ -41,7 +41,7 @@ is.arr = function (num) {
     return false
 };
 is.obj = function (num) {
-    if (typeof str === 'object') {
+    if (typeof num === 'object') {
         return true
     }
     return false
