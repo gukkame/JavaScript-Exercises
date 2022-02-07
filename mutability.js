@@ -3,7 +3,7 @@
 let clone1 = {
     ...person
 };
-clone2 = {
+let clone2 = {
     ...person
 };
 person.age++
