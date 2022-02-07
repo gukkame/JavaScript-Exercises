@@ -46,18 +46,18 @@ is.obj = function (num) {
     }
     return false
 };
-// is.fun = function (num) {
-//     if (typeof num === 'function') {
-//         return true
-//     }
-//     return false
-// };
-// is.truthy = function (num) {
-//     if (typeof num === "numing") {
-//         return true
-//     }
-//     return false
-// };
+is.fun = function (num) {
+    if (typeof num === 'function') {
+        return typeof num
+    }
+    return false
+};
+is.truthy = function (num) {
+    if (num == is.fun) {
+        return true
+    }
+    return false
+};
 // is.falsy = function (num) {
 //     if (typeof num === "numing") {
 //         return true
