@@ -19,7 +19,7 @@ function cutFirstLast(str) {
 }
 function keepFirst(str) {
     let result = [];
-    for (let i = 2; i < str.length; i++) {
+    for (let i = 0; i < 2; i++) {
         result.push(str[i]);
     }
     return result.join("");
@@ -32,8 +32,12 @@ function keepLast(str) {
     return result.join("");
 }
 function keepFirstLast(str) {
-    str = keepFirst(str)
-    str = keepLast(str)
-    return str
+    const s = str
+    str1 = keepFirst(s)
+    str2 = keepLast(s)
+    if (str1 == str2) {
+        return str1
+    }
+    return str1 + str2
 }
-console.log(cutFirstLast('yoafdyo'))
+// console.log(keepFirstLast('afdadad'))
