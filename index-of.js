@@ -17,7 +17,7 @@ function lastIndexOf(arr, c, start) {
     if (start != undefined) {
         s = start
     }
-    for (let i = arr.length; i > 0; i--) {
+    for (let i = arr.length - s - 1; i >= 0; i--) {
         if (arr[i] === c) {
             return i;
         }
@@ -31,4 +31,4 @@ function includes(arr, c) {
         }
     }
 }
-// console.log(lastIndexOf([0, 0, lastIndexOf, lastIndexOf], lastIndexOf, 2))
+// console.log("YSSSS", lastIndexOf([lastIndexOf, 0, 0, lastIndexOf], lastIndexOf, 2))
