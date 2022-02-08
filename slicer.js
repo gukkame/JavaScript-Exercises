@@ -1,7 +1,7 @@
 function slice(arr, start, end) {
     let result = [];
-    from = Math.max(start, 0);
-    to = Math.min(end);
+    let from = Math.max(start, 0);
+    let to = Math.min(end);
 
     if ((!end) || (end > arr.length)) {
         for (let i = from; i < arr.length; i++) {
@@ -12,5 +12,6 @@ function slice(arr, start, end) {
             result.push(arr[i]);
         }
     }
-    return result;
+    return result.join("");
 }
+console.log(slice('abcdef', 2))
