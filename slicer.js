@@ -19,7 +19,7 @@ function slice(arr, start, end) {
         return result.join("");
     }
 }
-console.log(slice('abcdef', -2))
+console.log(slice([1, 2, 3, 4, 5, 6], 2))
 console.log(slice('abcdef', 0, 2))
 console.log(slice('abcdef', 0, -2))
 console.log(slice('abcdef', -3, -1))
