@@ -6,24 +6,22 @@ function round(n) {
     } else if (n < 0) {
         n = n - 0.4
     }
-    return r(n, 0)
+    return n | 0
 }
 function floor(n) {
-    return r(n, 0)
+    if (n < 0) {
+        n = n - 1
+    }
+    return n | 0
 }
-function trunc(num) {
-    return r(num, 0)
+function trunc(x) {
+    return x - x % 1;
 }
 function ceil(n) {
     if (n > 0) {
         n = n + 1
     }
-    return r(n, 0)
-}
-
-function r(num, fixed) {
-    var re = new RegExp('^-?\\d+(?:\.\\d{0,' + (fixed || -1) + '})?');
-    return num.toString().match(re)[0];
+    return n | 0
 }
 console.log(num.map(round))
 console.log(num.map(floor))
