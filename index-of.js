@@ -32,6 +32,3 @@ function includes(arr, c) {
         }
     }
 }
-// console.log("YSSSS", lastIndexOf([0, 0, lastIndexOf, lastIndexOf], lastIndexOf))
-// console.log("YSSSS", lastIndexOf([0, 0, lastIndexOf, lastIndexOf], lastIndexOf, 3))
-// console.log("YSSSS", lastIndexOf([lastIndexOf, 0, 0, lastIndexOf], lastIndexOf, 2))
