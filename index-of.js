@@ -12,18 +12,19 @@ function indexOf(arr, c, start) {
 
     return -1;
 }
-function lastIndexOf(arr, c, start) {
-    let s = 0
-    if (start != undefined) {
-        s = start
+function lastIndexOf(array, value, index) {
+    if (!index) {
+        index = array.length - 1
     }
-    for (let i = arr.length - s - 1; i >= 0; i--) {
-        if (arr[i] === c) {
-            return i;
+
+    for (let i = index; i >= 0; i--) {
+        if (array[i] === value) {
+            return i
         }
     }
-    return -1;
+    return -1
 }
+
 function includes(arr, c) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === c) {
@@ -31,4 +32,6 @@ function includes(arr, c) {
         }
     }
 }
+// console.log("YSSSS", lastIndexOf([0, 0, lastIndexOf, lastIndexOf], lastIndexOf))
+// console.log("YSSSS", lastIndexOf([0, 0, lastIndexOf, lastIndexOf], lastIndexOf, 3))
 // console.log("YSSSS", lastIndexOf([lastIndexOf, 0, 0, lastIndexOf], lastIndexOf, 2))
