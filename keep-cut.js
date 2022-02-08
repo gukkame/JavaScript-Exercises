@@ -33,11 +33,11 @@ function keepLast(str) {
 }
 function keepFirstLast(str) {
     const s = str
-    str1 = keepFirst(s)
-    str2 = keepLast(s)
+    let str1 = keepFirst(s)
+    let str2 = keepLast(s)
     if (str1 == str2) {
         return str1
     }
     return str1 + str2
 }
-// console.log(keepFirstLast('afdadad'))
+console.log(keepFirstLast('abcdef'))
