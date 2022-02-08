@@ -7,8 +7,10 @@ function pyramid(symbol, num) {
         for (let j = 1; j <= num - i; j++) {
             if (symbol.length == 1) {
                 string += " ";
-            } else {
+            } if (symbol.length == 2) {
                 string += "  ";
+            } else {
+                string += "   ";
             }
 
         }
@@ -23,4 +25,4 @@ function pyramid(symbol, num) {
     }
     return string
 }
-console.log(pyramid('{}', 11));
+console.log(pyramid('{}s', 11));
