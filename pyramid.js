@@ -5,9 +5,10 @@ function pyramid(symbol, num) {
     for (let i = 1; i <= num; i++) {
         // printing spaces
         for (let j = 1; j <= num - i; j++) {
+            // console.log(symbol.length)
             if (symbol.length == 1) {
                 string += " ";
-            } if (symbol.length == 2) {
+            } else if (symbol.length == 2) {
                 string += "  ";
             } else {
                 string += "   ";
@@ -25,4 +26,4 @@ function pyramid(symbol, num) {
     }
     return string
 }
-console.log(pyramid('{}s', 11));
+console.log(pyramid('aas', 11));
