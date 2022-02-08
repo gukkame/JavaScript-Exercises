@@ -6,11 +6,14 @@ function nasa(n) {
         if (i % 3 == 0 && i % 5 == 0) {
             s = s + "NASA"
         } else if (i % 3 == 0) {
-            s = s + "NA" + " "
+            s = s + "NA"
         } else if (i % 5 == 0) {
-            s = s + "SA" + " "
+            s = s + "SA"
         } else {
-            s = s + i.toString(10) + " ";
+            s = s + i.toString(10)
+        }
+        if (i != n) {
+            s = s + " "
         }
     }
 
