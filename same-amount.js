@@ -5,19 +5,16 @@ function sameAmount(str, re, r2) {
 
     r2 = (r2 === '.') ? ('\\' + r2) : r2;
     var cre2 = new RegExp(r2, 'g');
+
     let result2 = ((str || '').match(cre2) || []).length;
 
-    if (result == null) {
-        return false
-    }
-    if (result2 == null) {
+    if (result == null || result2 == null) {
         return false
     }
     if (result == result2) {
         return true
-    } else {
-        return false
     }
+    return false
 }
 
 // const data = `qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
