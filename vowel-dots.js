@@ -18,7 +18,7 @@ function vowelDots(str) {
 
 }
 
-console.log(vowelDots('something'));
-console.log(vowelDots(''));
-console.log(vowelDots('rhythm'))
-console.log(vowelDots('Algorithm'));
+// console.log(vowelDots('something'));
+// console.log(vowelDots(''));
+// console.log(vowelDots('rhythm'))
+// console.log(vowelDots('Algorithm'));
