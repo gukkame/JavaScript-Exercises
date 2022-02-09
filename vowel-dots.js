@@ -1,5 +1,5 @@
 function vowelDots(str) {
-    str1 = ""
+    let str1 = ""
     let vowels = /[aeiou]/gi;
     let result = str.match(vowels);
     if (result == null) {
