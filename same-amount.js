@@ -20,8 +20,8 @@ function sameAmount(str, re, r2) {
     }
 }
 
-const data = `qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
- ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`
+// const data = `qqqqqqq q qqqqqqqfsqqqqq q qq  qw w wq wqw  wqw
+//  ijnjjnfapsdbjnkfsdiqw klfsdjn fs fsdnjnkfsdjnk sfdjn fsp fd`
 
 // console.log(sameAmount(data, /h/, /w/))
 // console.log(sameAmount(data, /qqqq /, /qqqqqqq/));
