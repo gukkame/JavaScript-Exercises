@@ -1,6 +1,6 @@
 function letterSpaceNumber(str) {
 
-    const regex = /([a-z]|[A-Z])\s(\d\s|\d$|\d(?=\,)|\d(?=\.))/g;
+    const regex = /([a-z]|[A-Z])\s(\d(?=\s)|\d$|\d(?=\,)|\d(?=\.))/g;
     let found = str.match(regex);
     if (found == null) {
         return []
