@@ -39,21 +39,21 @@ function isPast(date) {
     return false
 }
 
-const invalid = (callback, ary = 1) => {
-    for (const s of [
-        `new Date('')`,
-        `new Date(NaN)`,
-        `''`,
-        `'2013-01-01'`,
-        `NaN`,
-    ]) {
-        if (callback(...Array(ary).fill(eval(s)))) {
-            throw Error(`${callback.name}(${s}) should be false`)
-        }
-    }
-}
+// const invalid = (callback, ary = 1) => {
+//     for (const s of [
+//         `new Date('')`,
+//         `new Date(NaN)`,
+//         `''`,
+//         `'2013-01-01'`,
+//         `NaN`,
+//     ]) {
+//         if (callback(...Array(ary).fill(eval(s)))) {
+//             throw Error(`${callback.name}(${s}) should be false`)
+//         }
+//     }
+// }
 
-console.log(invalid(isAfter, 2));
+// console.log(invalid(isAfter, 2));
 // console.log(isFuture(new Date('1992-01-01')));
 // console.log(isFuture(new Date(Date.now() + 1)));
 // console.log(isFuture(new Date(2077, 11, 31)));
