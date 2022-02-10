@@ -1,9 +1,6 @@
 function isValid(d) {
-    if (!isNaN(d) && d instanceof Date) {
-        return true
-
-    }
-    return false
+    return d instanceof Date && !isNaN(new Date(d)) || typeof d === 'number' && !isNaN(new Date(d));
+    // return d instanceof Date && !isNaN(d.getTime())
 }
 function isAfter(d1, d2) {
     if (d1 < d2 || d1 <= d2) {
@@ -21,14 +18,14 @@ function isBefore(d1, d2) {
     }
 }
 function isFuture(d) {
-    let p = isValid(d)
+    let p = new Date(d).toString() !== 'Invalid Date';
     if (p == true && Date.now() < d) {
         return true
     }
     return false
 }
-function isPast(d) {
-    let p = isValid(d)
+function isPast(date) {
+    let p = new Date(d).toString() !== 'Invalid Date';
     if (p == true && Date.now() > d) {
         return true
     }
@@ -58,7 +55,9 @@ function isPast(d) {
 
 // console.log(isBefore(new Date(2321, 11, 21), new Date(Date.now())));console.log(isBefore(123123, 526));
 // console.log(isBefore(new Date('1992-01-01'), new Date('1992-01-02')));
-
+// console.log(typeof Date.now());
+// console.log(typeof new Date('1995-12-17T03:24:00').getTime());
+// console.log(isValid(Date.now()));
 // console.log(isValid(new Date('December 17, 1995 03:24:00')));
 // console.log(isValid(new Date(1488370835081)));
 // console.log(isValid(new Date('1995-12-17T03:24:00').getTime()));
