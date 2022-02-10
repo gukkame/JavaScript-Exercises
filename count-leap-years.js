@@ -1,8 +1,7 @@
 function countLeapYears(date) {
     date = date.toString()
-    year = date.split(" ")
+    let year = date.split(" ")
     let y = year[3]
-    let p = 0
     console.log(year[3]);
 
     y /= 4.13
