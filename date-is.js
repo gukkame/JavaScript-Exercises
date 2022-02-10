@@ -25,14 +25,14 @@ function isBefore(d1, d2) {
     }
 }
 function isFuture(d) {
-    let p = new Date(d).toString() !== 'Invalid Date';
+    let p = isValid(d)
     if (p == true && Date.now() < d) {
         return true
     }
     return false
 }
-function isPast(date) {
-    let p = new Date(d).toString() !== 'Invalid Date';
+function isPast(d) {
+    let p = isValid(d)
     if (p == true && Date.now() > d) {
         return true
     }
