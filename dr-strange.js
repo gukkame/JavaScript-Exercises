@@ -8,10 +8,10 @@ function addWeek(date) {
 
 }
 function timeTravel(obj) {
-    obj.date.setHours(obj.hour + 2)
+    obj.date.setHours(obj.hour - 1)
     obj.date.setMinutes(obj.minute)
     obj.date.setSeconds(obj.second)
-    return obj
+    return obj.date
 }
 // console.log(addWeek(new Date('0001-01-06')));//saturday
 // console.log(addWeek(new Date('0001-01-11')));//secondThursday
@@ -20,11 +20,12 @@ function timeTravel(obj) {
 
 
 // console.log(timeTravel({
-//     date: new Date('2000-05-09 01:28:02'),
+//     date: new Date('2000-05-29 01:28:02'),
 //     hour: 21,
 //     minute: 22,
 //     second: 22,
 // }))
+// console.log(new Date('2020-05-29 21:22:22'));
 
 
 
