@@ -1,7 +1,7 @@
 export const build = (count) => {
     const body = document.querySelector('body')
     let i = 1
-    let intervalID = setInterval(bricks, 10);
+    let intervalID = setInterval(bricks, 100);
     function bricks(times) {
         let brick = document.createElement("div")
         brick.append(i)
