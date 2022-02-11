@@ -6,7 +6,7 @@ export function generateLetters() {
         document.body.append(div)
         div.append(r)
         div.id = i
-        document.getElementById(i).style.fontSize = (i + 11) + "px"
+        document.getElementById(i).style.fontSize = (i + 10) + "px"
         if (i < 40) {
             document.getElementById(i).style.fontWeight = "300"
         }
