@@ -17,7 +17,6 @@ let fusion = function (obj, obj2) {
     } else {
         keylength = keys2.length
     }
-    console.log("value1 type ", typeof value3[0]);
     if (value1.length > 1 || typeof value3[0] === 'object') {
         for (let i = 0; i < keylength; i++) {
             let key = keys2[i]
